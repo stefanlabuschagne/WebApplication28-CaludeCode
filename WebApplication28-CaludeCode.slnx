@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="WebApplication1/WebApplication1.csproj" Id="66288243-709c-4234-8895-b682b1dff5f4" />
+  <Project Path="ClassLibrary1-BusinessLayer/ClassLibrary1-BusinessLayer.csproj" Id="879790a5-2f5f-4a86-8e43-25161f8c8cbd" />
+  <Project Path="WebApplication1/WebApplication1-API.csproj" Id="66288243-709c-4234-8895-b682b1dff5f4" />
   <Project Path="WebApplication28-CaludeCode/WebApplication28-CaludeCode.csproj" />
 </Solution>
