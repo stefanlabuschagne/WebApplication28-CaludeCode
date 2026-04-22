@@ -1,7 +1,18 @@
+﻿using Microsoft.OpenApi;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+// added Swagger services
+builder.Services.AddSwaggerGen(options =>
+{
+  options.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+});
+
+
 
 var app = builder.Build();
 
@@ -25,5 +36,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.UseSwagger();  // Added
 
 app.Run();
